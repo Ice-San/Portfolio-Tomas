@@ -50,3 +50,21 @@ body {
     width: 95%;
     height: 95%;
 }
+
+.Webpage-firstsection-title {
+    font-size: 40px;
+    margin-top: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Webpage-firstsection-description {
+    font-size: 20px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
