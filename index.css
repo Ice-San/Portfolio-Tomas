@@ -87,14 +87,14 @@ body {
 .Webpage-ChangeTheme i {
     padding: 7px;
     font-size: 1.9em;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
 .Webpage-ChangeTheme p {
     padding: 7px;
     font-size: 23px;
-    color: white;
+    color: black;
 }
 
 .Webpage-firstsection-title {
