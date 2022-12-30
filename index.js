@@ -1,4 +1,3 @@
-
 // Translate Portfolio
 
 const hideEng = document.querySelectorAll('.eng');
@@ -18,4 +17,11 @@ window.onload = function WindowLoad(event) {
           }
 
     }
+}
+
+function whiteTheme() {
+    document.getElementsByClassName('fa-toggle-off').style.display = "none";
+    document.getElementsByClassName('fa-toggle-on').style.display = "unset";
+    document.getElementById('TextTheme').innerText = "Night Theme";
+    document.getElementsByTagName("body").style = "background-color: black; color: white;";
 }
