@@ -37,6 +37,8 @@ function whiteTheme() {
     document.querySelector('.fa-toggle-on').style.display = "unset";
     document.getElementById('TextThemeEng').innerText = "Night Theme";
     document.getElementById('TextThemePt').innerText = "Tema Preto";
+    document.querySelector('.Webpage-ChangeTheme i').style.color = "black";
+    document.querySelector('.Webpage-ChangeTheme p').style.color = "black";
     document.body.style = "background-color: rgb(27, 27, 27); color: white;";
     document.querySelector('.Webpage-Icon').style = "background-color: rgb(27, 27, 27);";
 
@@ -48,7 +50,9 @@ function blackTheme() {
     document.querySelector('.fa-toggle-on').style.display = "none";
     document.getElementById('TextThemeEng').innerText = "Day Theme";
     document.getElementById('TextThemePt').innerText = "Tema Branco";
+    document.querySelector('.Webpage-ChangeTheme i').style.color = "white";
+    document.querySelector('.Webpage-ChangeTheme p').style.color = "white";
     document.body.style = "background-color: white; color: black;";
     document.querySelector('.Webpage-Icon').style = "background-color: white;";
-    
+
 }
