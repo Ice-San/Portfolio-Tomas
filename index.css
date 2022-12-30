@@ -98,19 +98,16 @@ body {
 }
 
 .Webpage-firstsection-title {
-    font-size: 40px;
-    margin-top: 50px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 75px;
+    padding-left: 250px;
 }
 
-.Webpage-firstsection-description {
-    font-size: 20px;
-    margin-top: 50px;
+.Webpage-firstsection-title div {
+    text-align: center;
+    padding: 15px 0px;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Webpage-firstsection-title div h1 {
+    font-size: 70px;
+    padding: 0px 50px;
 }
