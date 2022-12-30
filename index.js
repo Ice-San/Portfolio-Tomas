@@ -42,6 +42,7 @@ function whiteTheme() {
     document.getElementById('TextThemeEng').style.color = "white";
     document.body.style = "background-color: rgb(27, 27, 27); color: white;";
     document.querySelector('.Webpage-Icon').style = "background-color: rgb(27, 27, 27);";
+    document.querySelector('.pop-up-container').style = "background-color: rgb(27, 27, 27);";
 
 }
 
@@ -56,5 +57,22 @@ function blackTheme() {
     document.getElementById('TextThemeEng').style.color = "black";
     document.body.style = "background-color: white; color: black;";
     document.querySelector('.Webpage-Icon').style = "background-color: white;";
+    document.querySelector('.pop-up-container').style = "background-color: white;";
 
+}
+
+
+/* ============================== 
+
+          Website Pop-ups
+
+   ==============================*/
+
+
+function aboutmePopup() {
+    document.querySelector('.pop-up').style.visibility = "visible";
+}
+
+function aboutmePopupClose() {
+    document.querySelector('.pop-up').style.visibility = "hidden";
 }
