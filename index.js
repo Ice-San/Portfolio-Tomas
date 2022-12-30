@@ -43,6 +43,7 @@ function whiteTheme() {
     document.body.style = "background-color: rgb(27, 27, 27); color: white;";
     document.querySelector('.Webpage-Icon').style = "background-color: rgb(27, 27, 27);";
     document.querySelector('.pop-up-container').style = "background-color: rgb(27, 27, 27);";
+    document.querySelector('.pop-up-container-description-icon').style = "border: 3px solid white;";
 
 }
 
@@ -58,6 +59,7 @@ function blackTheme() {
     document.body.style = "background-color: white; color: black;";
     document.querySelector('.Webpage-Icon').style = "background-color: white;";
     document.querySelector('.pop-up-container').style = "background-color: white;";
+    document.querySelector('.pop-up-container-description-icon').style = "border: 3px solid black;";
 
 }
 

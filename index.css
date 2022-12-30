@@ -171,6 +171,30 @@ body {
     font-size: 35px;
 }
 
-.pop-up-container-icon {
-    background-color: white;
+.pop-up-container-description {
+    display: flex;
+}
+
+.pop-up-container-description-icon {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid black;
+
+    margin: 100px;
+
+    background-image: url("./src/Home/icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pop-up-container-description-text h1{
+    font-size: 55px;
+    margin: 100px 0px 50px -50px;
+}
+
+.pop-up-container-description-text p{
+    font-size: 25px;
+    margin: 0px 0px 0px -40px;
 }
