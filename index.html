@@ -1,47 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" type="image/jpg" href="./src/Home/icon.jpg">
-        <title>Portfolio Tomás</title>
-        <link rel="stylesheet" href="index.css"/>
+  <head>
+    <link rel="icon" type="image/jpg" href="./src/img/profile-photo.jpg" />
+    <title>My name is Tomás</title>
+    <link rel="stylesheet" href="index.css" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a905c7ce00.js" crossorigin="anonymous"></script>
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/a905c7ce00.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <body>
-
-        <div class="Webpage-Banner">
-            <div class="Webpage-Banner-Container">
-                <div class="Webpage-Icon">
-                    <div class="Webpage-Icon-Container"></div>
-                </div>
-
-                <div class="Webpage-SocialMidia">
-                    <a href="https://www.instagram.com/_.tomascosta1206._/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100012409396546"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-
-                <div class="Webpage-ChangeTheme">
-                    <i class="fa-solid fa-toggle-on" style="display: none;" onclick="blackTheme()"></i>
-                    <i class="fa-solid fa-toggle-off" onclick="whiteTheme()"></i>
-                    <p class="eng" id="TextThemeEng">Day Theme123</p>
-                    <p class="pt" style="display: none;" id="TextThemePt">Tema Branco</p>
-                </div>
+  <body>
+    <div id="container">
+      <div id="background"></div>
+      <a id="chat-me-button" class="button">
+        <i class="fa-solid fa-comments"></i>
+        <span>chat me</span>
+      </a>
+      <div id="pop-up" class="hidden">
+        <div id="pop-up-container" class="border-radius">
+          <div id="pop-up-content">
+            <div id="pop-up-about-me" class="vanish">
+              <div class="img1-container .img-container">
+                <div id="img1"></div>
+              </div>
+              <div class="img2-container .img-container">
+                <div id="img2"></div>
+              </div>
+              <div class="img3-container .img-container">
+                <div id="img3"></div>
+              </div>
+              <div class="video-container">
+                <video autoplay muted loop>
+                  <source src="./src/videos/pexels-1.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
+            <div id="pop-up-know-more" class="vanish">
+              <ul>
+                <li class="color2">
+                  <a target="_blank" href="https://pt.wikipedia.org/wiki/HTML"
+                    >HTML</a
+                  >
+                </li>
+                <li class="color3">
+                  <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"
+                    >CSS</a
+                  >
+                </li>
+                <li class="color4">
+                  <a
+                    target="_blank"
+                    href="https://pt.wikipedia.org/wiki/JavaScript"
+                    >JavaScript</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="pop-up-chat-me" class="vanish"></div>
+          </div>
+          <a href="#" class="pop-up-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
         </div>
-
-        <div class="Webpage-firstsection-title">
-            <h1 class="eng">About Me</h1>
-            <h1 class="pt" style="display: none;">Sobre Mim</h1>
+      </div>
+      <main class="border-radius">
+        <div id="content">
+          <header>
+            <article>
+              <div class="profile-photo-container">
+                <div class="profile-photo"></div>
+              </div>
+            </article>
+            <article>
+              <div id="introduction">
+                <h1>Hello! I'm Tomás</h1>
+              </div>
+              <ul id="contacts">
+                <li>
+                  <a target="_blank" href="#" class="link-box">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link-box">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link-box email">
+                    <span>tomaz@gmail.com</span>
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </li>
+              </ul>
+              <div id="about-me">
+                <a id="about-me-button" class="button">
+                  <span>about me</span>
+                  <i class="fa-solid fa-star-of-life"></i>
+                </a>
+              </div>
+            </article>
+          </header>
         </div>
+        <footer class="border-radius">
+          <h2>Web Developer!</h2>
+          <a id="know-more-button" class="button">
+            <i class="fa-solid fa-plus"></i>
+            <span>know more</span>
+          </a>
+        </footer>
+      </main>
+    </div>
 
-        <div class="Webpage-firstsection-description">
-            <p class="eng">Some text here.<br>Some text here.<br>Some text here.</p>
-            <p class="pt" style="display: none;">Algum texto aqui.</p>
-        </div>
-
-        <script src="./index.js"></script>
-    </body>
+    <script src="./index.js"></script>
+  </body>
 </html>

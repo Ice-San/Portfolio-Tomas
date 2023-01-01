@@ -1,0 +1,41 @@
+#pop-up-know-more {
+  width: 100%;
+  height: 100%;
+}
+
+#pop-up-know-more ul {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#pop-up-know-more ul li {
+  border-radius: 15px;
+}
+
+#pop-up-know-more ul li.color1 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#pop-up-know-more ul li.color2 {
+  background-color: rgb(235, 77, 75);
+}
+
+#pop-up-know-more ul li.color3 {
+  background-color: rgb(72, 52, 212);
+}
+
+#pop-up-know-more ul li.color4 {
+  background-color: rgb(249, 202, 36);
+}
+
+#pop-up-know-more ul li a {
+  display: block;
+  padding: 20px 25px;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.7);
+  display: grid;
+  place-content: center;
+}
