@@ -4,6 +4,60 @@
     box-sizing: border-box;
 }
 
+
+/* ==========================================================================
+
+                Classes ands IDs for my JS Script
+
+   ========================================================================== */
+
+
+.black-background {
+    background-color: rgb(27, 27, 27);
+}
+
+.white-background {
+    background-color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.border-white {
+    border: 3px solid white;
+}
+
+.border-black {
+    border: 3px solid rgb(27, 27, 27);
+}
+
+.visibility-with-display-on {
+    display: unset;
+}
+
+.visibility-with-display-off {
+    display: none;
+}
+
+.visibility-with-visibility-on {
+    visibility: visible;
+}
+
+.visibility-with-visibility-off {
+    visibility: hidden;
+}
+
+/* ==========================================================================
+
+                My Default CSS code for my Portefolio
+
+   ========================================================================== */
+
 body {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     background-color: white;

@@ -31,19 +31,47 @@ window.onload = function WindowLoad(event) {
 
    ==============================*/
 
+   // ------------- Consts -----------------------------------------------------------------
+
+    const buttonOn =  document.querySelector('.fa-toggle-on');
+    const buttonOff = document.querySelector('.fa-toggle-off');
+    const portuguese = document.getElementById('TextThemePt');
+    const english = document.getElementById('TextThemeEng');
+    const webpageIcon = document.querySelector('.Webpage-Icon');
+    const popupContainer = document.querySelector('.pop-up-container');
+    const popupDescriptionIcon = document.querySelector('.pop-up-container-description-icon');
+
+    // ----------- Add Click Events ---------------------------------------------------------
+
+    buttonOff.addEventListener("click", whiteTheme);
+    buttonOn.addEventListener("click", whiteTheme);
+
+    // ------------ Functions ---------------------------------------------------------------
+
 function whiteTheme() {
 
-    document.querySelector('.fa-toggle-off').style.display = "none";
-    document.querySelector('.fa-toggle-on').style.display = "unset";
-    document.getElementById('TextThemeEng').innerText = "Night Theme";
-    document.getElementById('TextThemePt').innerText = "Tema Preto";
-    document.querySelector('.Webpage-ChangeTheme i').style.color = "white";
-    document.getElementById('TextThemePt').style.color = "white";
-    document.getElementById('TextThemeEng').style.color = "white";
-    document.body.style = "background-color: rgb(27, 27, 27); color: white;";
-    document.querySelector('.Webpage-Icon').style = "background-color: rgb(27, 27, 27);";
-    document.querySelector('.pop-up-container').style = "background-color: rgb(27, 27, 27);";
-    document.querySelector('.pop-up-container-description-icon').style = "border: 3px solid white;";
+            // Buttons Visibility
+    buttonOn.classList.add('visibility-with-display-on');
+    buttonOff.classList.add('visibility-with-display-off');
+
+            // Translation
+    portuguese.innerText = "Tema Preto";
+    english.innerText = "Tema Preto";
+
+            // Changing Theme of the page
+    document.querySelector('.Webpage-ChangeTheme i').classList.add('white-text');
+    portuguese.classList.add('white-text');
+    english.classList.add('white-text');
+
+    document.body.classList.remove('white-background', 'black-text');
+    webpageIcon.classList.remove('white-background');
+    popupContainer.classList.remove('white-background');
+    popupDescriptionIcon.classList.remove('white-background');
+
+    document.body.classList.add('black-background', 'white-text');
+    webpageIcon.classList.add('black-background');
+    popupContainer.classList.add('black-background');
+    popupDescriptionIcon.classList.add('border-white');
 
 }
 
