@@ -10,7 +10,7 @@
         <script src="https://kit.fontawesome.com/a905c7ce00.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="white-background black-text"> 
 
         <!-- =============================
             
@@ -19,27 +19,27 @@
              ============================= -->
 
 
-        <div class="pop-up" style="visibility: hidden;">
-            <div class="pop-up-container">
-                <div class="pop-up-close" onclick="aboutmePopupClose()">
+        <div class="pop-up visibility-with-visibility-off">
+            <div class="pop-up-container white-background">
+                <div class="pop-up-close">
                     <div>
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>
 
                 <div class="pop-up-container-title">
-                    <h1 class="eng">About Me</h1>
-                    <h1 class="pt" style="display: none;">Sobre Mim</h1>
+                    <h1 class="eng visibility-with-display-on">About Me</h1>
+                    <h1 class="pt visibility-with-display-off">Sobre Mim</h1>
                 </div>
 
                 <div class="pop-up-container-description">
-                    <div class="pop-up-container-description-icon"></div>
+                    <div class="pop-up-container-description-icon border-black"></div>
 
                     <div class="pop-up-container-description-text">
                         <h1>Tomás Costa</h1>
 
-                        <p class="eng">Some Text here.</p>
-                        <p class="pt" style="display: none;">Algum Texto aqui.</p>
+                        <p class="eng visibility-with-display-on">Some Text here.</p>
+                        <p class="pt visibility-with-display-off">Algum Texto aqui.</p>
                     </div>
                 </div>
 
@@ -51,12 +51,12 @@
             
                 WebPortefolio Home Above 
 
-             ============================= -->
+             ============================= --> 
 
 
             <div class="Webpage-Banner">
                 <div class="Webpage-Banner-Container">
-                    <div class="Webpage-Icon">
+                    <div class="Webpage-Icon white-background">
                         <div class="Webpage-Icon-Container"></div>
                     </div>
                 </div>
@@ -67,28 +67,28 @@
                 <a href="https://www.facebook.com/profile.php?id=100012409396546"><i class="fa-brands fa-facebook"></i></a>
 
                 <div class="Webpage-ChangeTheme">
-                    <i class="fa-solid fa-toggle-on" style="display: none;" onclick="blackTheme()"></i>
-                    <i class="fa-solid fa-toggle-off" onclick="whiteTheme()"></i>
-                    <p class="eng" id="TextThemeEng">Day Theme</p>
-                    <p class="pt" style="display: none;" id="TextThemePt">Tema Branco</p>
+                    <i class="fa-solid fa-toggle-on black-text" style="display: none;"></i>
+                    <i class="fa-solid fa-toggle-off black-text"></i>
+                    <p class="eng visibility-with-display-on black-text" id="TextThemeEng">Day Theme</p>
+                    <p class="pt visibility-with-display-off black-text" id="TextThemePt">Tema Branco</p>
                 </div>
             </div>
 
             <div class="Webpage-firstsection-title">
                 <div>
-                    <h1 class="eng" onclick="aboutmePopup()">About Me</h1>
-                    <h1 class="pt" style="display: none;" onclick="aboutmePopup()">Sobre Mim</h1>
+                    <h1 class="eng visibility-with-display-on" id="aboutme-popup-eng">About Me</h1>
+                    <h1 class="pt visibility-with-display-off" id="aboutme-popup-pt">Sobre Mim</h1>
                     
-                    <h1 class="eng">Posts</h1>
-                    <h1 class="pt" style="display: none;">Publicações</h1>
+                    <h1 class="eng visibility-with-display-on">Posts</h1>
+                    <h1 class="pt visibility-with-display-off">Publicações</h1>
                 </div>
 
                 <div>
-                    <h1 class="eng">Location</h1>
-                    <h1 class="pt" style="display: none;">Localização</h1>
+                    <h1 class="eng visibility-with-display-on">Location</h1>
+                    <h1 class="pt visibility-with-display-off">Localização</h1>
 
-                    <h1 class="eng">Contact</h1>
-                    <h1 class="pt" style="display: none;">Contato</h1>
+                    <h1 class="eng visibility-with-display-on">Contact</h1>
+                    <h1 class="pt visibility-with-display-off">Contato</h1>
                 </div>
             </div>
 

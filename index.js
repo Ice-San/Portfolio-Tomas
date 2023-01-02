@@ -44,29 +44,35 @@ window.onload = function WindowLoad(event) {
     // ----------- Add Click Events ---------------------------------------------------------
 
     buttonOff.addEventListener("click", whiteTheme);
-    buttonOn.addEventListener("click", whiteTheme);
+    buttonOn.addEventListener("click", blackTheme);
 
     // ------------ Functions ---------------------------------------------------------------
 
 function whiteTheme() {
 
             // Buttons Visibility
-    buttonOn.classList.add('visibility-with-display-on');
-    buttonOff.classList.add('visibility-with-display-off');
+    buttonOn.style.display = "unset";
+
+    buttonOff.style.display = "none";
 
             // Translation
     portuguese.innerText = "Tema Preto";
-    english.innerText = "Tema Preto";
+    english.innerText = "Night Theme";
 
             // Changing Theme of the page
+    document.querySelector('.Webpage-ChangeTheme i').classList.remove('black-text');
     document.querySelector('.Webpage-ChangeTheme i').classList.add('white-text');
+
+    portuguese.classList.remove('black-text');
     portuguese.classList.add('white-text');
+
+    english.classList.remove('black-text');
     english.classList.add('white-text');
 
     document.body.classList.remove('white-background', 'black-text');
     webpageIcon.classList.remove('white-background');
     popupContainer.classList.remove('white-background');
-    popupDescriptionIcon.classList.remove('white-background');
+    popupDescriptionIcon.classList.remove('border-black');
 
     document.body.classList.add('black-background', 'white-text');
     webpageIcon.classList.add('black-background');
@@ -77,17 +83,34 @@ function whiteTheme() {
 
 function blackTheme() {
 
-    document.querySelector('.fa-toggle-off').style.display = "unset";
-    document.querySelector('.fa-toggle-on').style.display = "none";
-    document.getElementById('TextThemeEng').innerText = "Day Theme";
-    document.getElementById('TextThemePt').innerText = "Tema Branco";
-    document.querySelector('.Webpage-ChangeTheme i').style.color = "black";
-    document.getElementById('TextThemePt').style.color = "black";
-    document.getElementById('TextThemeEng').style.color = "black";
-    document.body.style = "background-color: white; color: black;";
-    document.querySelector('.Webpage-Icon').style = "background-color: white;";
-    document.querySelector('.pop-up-container').style = "background-color: white;";
-    document.querySelector('.pop-up-container-description-icon').style = "border: 3px solid black;";
+            // Buttons Visibility
+    buttonOn.style.display = "none";
+
+    buttonOff.style.display = "unset";
+
+            // Translation
+    portuguese.innerText = "Tema Branco";
+    english.innerText = "Day Theme";
+
+            // Changing Theme of the page
+    document.querySelector('.Webpage-ChangeTheme i').classList.remove('white-text');
+    document.querySelector('.Webpage-ChangeTheme i').classList.add('black-text');
+
+    portuguese.classList.remove('white-text');
+    portuguese.classList.add('black-text');
+
+    english.classList.remove('white-text');
+    english.classList.add('black-text');
+
+    document.body.classList.remove('black-background', 'white-text');
+    webpageIcon.classList.remove('black-background');
+    popupContainer.classList.remove('black-background');
+    popupDescriptionIcon.classList.remove('border-white');
+
+    document.body.classList.add('white-background', 'black-text');
+    webpageIcon.classList.add('white-background');
+    popupContainer.classList.add('white-background');
+    popupDescriptionIcon.classList.add('border-black');
 
 }
 
@@ -98,11 +121,29 @@ function blackTheme() {
 
    ==============================*/
 
+// ------------- Consts -----------------------------------------------------------------
+
+const popupAboutmeOpenEng = document.getElementById('aboutme-popup-eng');
+const popupAboutmeOpenPt = document.getElementById('aboutme-popup-pt');
+const popupAboutmeClose = document.querySelector('.pop-up-close i');
+const popupAboutme = document.querySelector('.pop-up');
+
+// ----------- Add Click Events ---------------------------------------------------------
+
+popupAboutmeOpenEng.addEventListener("click", aboutmePopup);
+popupAboutmeOpenPt.addEventListener("click", aboutmePopup);
+popupAboutmeClose.addEventListener("click", aboutmePopupClose);
+
+// ------------ Functions ---------------------------------------------------------------
 
 function aboutmePopup() {
-    document.querySelector('.pop-up').style.visibility = "visible";
+
+    popupAboutme.classList.remove('visibility-with-visibility-off');
+    popupAboutme.classList.add('visibility-with-visibility-on');
 }
 
 function aboutmePopupClose() {
-    document.querySelector('.pop-up').style.visibility = "hidden";
+
+    popupAboutme.classList.add('visibility-with-visibility-off');
+    popupAboutme.classList.remove('visibility-with-visibility-on');
 }

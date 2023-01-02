@@ -60,8 +60,6 @@
 
 body {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: black;
 }
 
 .Webpage-Banner {
@@ -81,7 +79,6 @@ body {
 
 .Webpage-Icon {
     border-radius: 100%;
-    background-color: white;
     width: 300px;
     height: 300px;
 
@@ -135,14 +132,12 @@ body {
 .Webpage-ChangeTheme i {
     padding: 7px;
     font-size: 1.9em;
-    color: black;
     cursor: pointer;
 }
 
 .Webpage-ChangeTheme p {
     padding: 7px;
     font-size: 23px;
-    color: black;
 }
 
 .Webpage-firstsection-title {
@@ -172,9 +167,7 @@ body {
 }
 
 .pop-up-container {
-    background-color: white;
     border-radius: 8px;
-    border: 2px solid white;
 
     box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.25);
     -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,15);
@@ -214,6 +207,7 @@ body {
     height: 100%;
     padding-top: 7px;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 .pop-up-container-title {
@@ -233,7 +227,6 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    border: 3px solid black;
 
     margin: 100px;
 
