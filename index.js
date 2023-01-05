@@ -40,6 +40,7 @@ window.onload = function WindowLoad(event) {
     const webpageIcon = document.querySelector('.Webpage-Icon');
     const popupContainer = document.querySelector('.pop-up-container');
     const popupDescriptionIcon = document.querySelector('.pop-up-container-description-icon');
+    const navbarTheme = document.querySelector('.navbar');
 
     // ----------- Add Click Events ---------------------------------------------------------
 
@@ -62,6 +63,10 @@ function whiteTheme() {
             // Changing Theme of the page
     document.querySelector('.Webpage-ChangeTheme i').classList.remove('black-text');
     document.querySelector('.Webpage-ChangeTheme i').classList.add('white-text');
+
+    navbarTheme.classList.remove('black-text');
+    navbarTheme.classList.remove('bg-body-tertiary');
+    navbarTheme.classList.add('white-theme');
 
     portuguese.classList.remove('black-text');
     portuguese.classList.add('white-text');
@@ -95,6 +100,10 @@ function blackTheme() {
             // Changing Theme of the page
     document.querySelector('.Webpage-ChangeTheme i').classList.remove('white-text');
     document.querySelector('.Webpage-ChangeTheme i').classList.add('black-text');
+
+    navbarTheme.classList.remove('white-text');
+    navbarTheme.classList.remove('bg-body-tertiary');
+    navbarTheme.classList.add('black-text');
 
     portuguese.classList.remove('white-text');
     portuguese.classList.add('black-text');
