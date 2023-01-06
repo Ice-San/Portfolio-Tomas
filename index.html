@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
         <link rel="icon" type="image/jpg" href="./src/Home/icon.jpg">
         <title>Portfolio Tomás</title>
         <link rel="stylesheet" href="index.css"/>
@@ -22,28 +21,117 @@
              ============================= -->
 
 
-        <div class="pop-up visibility-with-visibility-off">
+        <div class="pop-up pop-up-aboutme visibility-with-visibility-off">
             <div class="pop-up-container white-background">
-                <div class="pop-up-close">
+                <div class="pop-up-close close-aboutme">
                     <div>
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>
 
-                <div class="pop-up-container-title">
-                    <h1 class="eng visibility-with-display-on">About Me</h1>
-                    <h1 class="pt visibility-with-display-off">Sobre Mim</h1>
-                </div>
-
                 <div class="pop-up-container-description">
                     <div class="pop-up-container-description-icon border-black"></div>
 
-                    <div class="pop-up-container-description-text">
-                        <h1>Tomás Costa</h1>
+                        <div class="pop-up-container-description-text">
+                            <h1 class="eng visibility-with-display-on">Hi there,<br>I'm Tomás Costa! 👋🏻</h1>
+                            <h1 class="pt visibility-with-display-off">Olá, tudo bem?<br>Eu sou o Tomás Costa! 👋🏻</h1>
 
-                        <p class="eng visibility-with-display-on">Some Text here.</p>
-                        <p class="pt visibility-with-display-off">Algum Texto aqui.</p>
+                            <p class="eng visibility-with-display-on">Some Text here.</p>
+                            <p class="pt visibility-with-display-off">Algum Texto aqui.</p>
+                        </div>
                     </div>
+
+                    <div class="pop-up-container-skills">
+                        <h1>Skills:</h1>
+
+                        <div>
+                            <a href="https://pt.wikipedia.org/wiki/HTML"><p class="html">HTML</p></a>
+                            <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets"><p class="css">CSS</p></a>
+                        </div>
+                        <a href="https://pt.wikipedia.org/wiki/JavaScript"><p class="js">JS</p></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pop-up pop-up-location visibility-with-visibility-off">
+            <div class="pop-up-container pop-up-container-location white-background">
+                <div class="pop-up-close close-location">
+                    <div>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="pop-up-container-description">
+                    <div class="pop-up-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12257.594153126925!2d-7.514090863274531!3d39.820481371020385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5e7522127fbb%3A0xf2b391c7898084b1!2sInstituto%20Politecnico%20De%20Castelo%20Branco!5e0!3m2!1spt-PT!2spt!4v1672958495800!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pop-up pop-up-posts visibility-with-visibility-off">
+            <div class="pop-up-container pop-up-container-posts white-background">
+                <div class="pop-up-close close-posts">
+                    <div>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="pop-up-container-description">
+                   <div class="pop-up-description-posts">
+                    
+                    <h1>Posts</h1>
+
+                    <div>
+                        <div class="form-floating mb-3 black-text">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Username</label>
+                          </div>          
+
+                        <div class="form-floating black-text">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+
+                        <a href="./index.html"><p>Submit</p></a>
+                    </div>
+
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pop-up pop-up-contact visibility-with-visibility-off">
+            <div class="pop-up-container pop-up-container-contact white-background">
+                <div class="pop-up-close close-contact">
+                    <div>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="pop-up-container-description">
+                   <div class="pop-up-description-posts">
+                    
+                    <h1>Contact</h1>
+
+                    <div>
+                        <div class="form-floating mb-3 black-text">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                          </div>          
+
+                        <div class="form-floating black-text">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Message</label>
+                        </div>
+
+                        <a href="./index.html"><p>Send Email</p></a>
+                    </div>
+
+                   </div>
                 </div>
 
             </div>
@@ -85,19 +173,19 @@
 
             <div class="Webpage-firstsection-title">
                 <div>
-                    <h1 class="eng visibility-with-display-on" id="aboutme-popup-eng">About Me</h1>
-                    <h1 class="pt visibility-with-display-off" id="aboutme-popup-pt">Sobre Mim</h1>
+                    <h1 class="eng visibility-with-display-on hover-menu" id="aboutme-popup-eng">About Me</h1>
+                    <h1 class="pt visibility-with-display-off hover-menu" id="aboutme-popup-pt">Sobre Mim</h1>
                     
-                    <h1 class="eng visibility-with-display-on">Posts</h1>
-                    <h1 class="pt visibility-with-display-off">Publicações</h1>
+                    <h1 class="eng visibility-with-display-on hover-menu" id="posts-popup-eng">Posts</h1>
+                    <h1 class="pt visibility-with-display-off hover-menu" id="posts-popup-pt">Publicações</h1>
                 </div>
 
                 <div>
-                    <h1 class="eng visibility-with-display-on">Location</h1>
-                    <h1 class="pt visibility-with-display-off">Localização</h1>
+                    <h1 class="eng visibility-with-display-on hover-menu" id="location-popup-eng">Location</h1>
+                    <h1 class="pt visibility-with-display-off hover-menu" id="location-popup-pt">Localização</h1>
 
-                    <h1 class="eng visibility-with-display-on">Contact</h1>
-                    <h1 class="pt visibility-with-display-off">Contato</h1>
+                    <h1 class="eng visibility-with-display-on hover-menu" id="contact-popup-eng">Contact</h1>
+                    <h1 class="pt visibility-with-display-off hover-menu" id="contact-popup-pt">Contato</h1>
                 </div>
             </div>
 
