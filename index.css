@@ -15,7 +15,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .hidden {
@@ -234,5 +234,36 @@ footer > #know-more-button.button {
 }
 
 .black-theme {
-    background-color: rgb(22, 22, 22);
+  background-color: rgb(22, 22, 22);
+}
+
+@media (max-height: 1100px) {
+  main #content {
+    align-items: flex-start;
+    padding-top: 10vh;
+  }
+}
+
+@media (max-height: 900px) {
+  main #content {
+    padding-top: 5vh;
+  }
+}
+
+@media (max-height: 800px) {
+  main #content {
+    transform: scale(0.7);
+    transform-origin: center;
+  }
+
+  footer h2 {
+    font-size: 3em !important;
+  }
+}
+
+@media (max-height: 650px) {
+  main #content {
+    padding-top: 7vh;
+    transform-origin: top;
+  }
 }

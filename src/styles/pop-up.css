@@ -12,6 +12,13 @@
   place-content: center;
 }
 
+@media (max-height: 800px) {
+  #pop-up {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
 #pop-up #pop-up-container {
   position: relative;
   background-color: rgba(255, 255, 255, 0.7);
