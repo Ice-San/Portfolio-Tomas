@@ -1,4 +1,89 @@
 #pop-up-chat-me {
   width: 100%;
   height: 100%;
+  padding: 0 100px;
+
+  display: grid;
+  place-content: center;
+}
+
+#pop-up-chat-me #chat {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#pop-up-chat-me #chat #message-container {
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#pop-up-chat-me #chat #message-container .message {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+#pop-up-chat-me #chat #message-container .message h3,
+#pop-up-chat-me #chat #message-container .message p {
+  overflow-wrap: break-word;
+}
+
+#pop-up-chat-me #chat #form-container {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#pop-up-chat-me #chat #form-container form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  grid-gap: 10px;
+}
+
+#pop-up-chat-me #chat #form-container form input,
+#pop-up-chat-me #chat #form-container form textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+#pop-up-chat-me #chat #form-container form input,
+#pop-up-chat-me #chat #form-container form textarea,
+#pop-up-chat-me #chat #form-container form button {
+  border: none;
+  border-radius: 15px;
+  padding: 16px;
+  font-size: 20px;
+}
+
+#pop-up-chat-me #chat #form-container form input:focus,
+#pop-up-chat-me #chat #form-container form textarea:focus,
+#pop-up-chat-me #chat #form-container form button:focus {
+  outline: none;
+}
+
+#pop-up-chat-me #chat #form-container form textarea {
+  resize: none;
+  height: 10vh;
+}
+
+#pop-up-chat-me #chat #form-container form button {
+  background-color: rgba(23, 120, 242, 0.8);
+  color: rgba(255, 255, 255, 1);
+  transition: background-color 0.3s;
+}
+
+#pop-up-chat-me #chat #form-container form button:hover {
+  background-color: rgba(23, 120, 242, 0.9);
+}
+
+#pop-up-chat-me #chat #form-container form button:active {
+  background-color: rgba(23, 120, 242, 1);
 }

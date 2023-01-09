@@ -23,9 +23,21 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <style>
+      #map-container-2 {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+      }
+      #map-container-2 iframe {
+        left: 0;
+        top: 0;
+        position: absolute;
+      }
+    </style>
   </head>
 
-  <body class="white-background black-text">
+  <body>
     <nav class="navbar black-theme">
       <form class="container-fluid justify-content-start">
         <a href="../"
@@ -35,27 +47,19 @@
         >
       </form>
     </nav>
-    <h1>Login:</h1>
-    <div class="form-floating mb-3">
-      <input
-        type="email"
-        class="form-control"
-        id="floatingInput"
-        placeholder="name@example.com"
-      />
-      <label for="floatingInput">Email address</label>
+    <div id="container">
+      <div id="map-container-google-2" class="z-depth-1-half map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15886.759864931666!2d-7.498549869861791!3d39.82131809665073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5ea6bb2280e1%3A0x1c460157bc4b46c8!2sEscola%20Superior%20de%20Tecnologia%20-%20Instituto%20Polit%C3%A9cnico%20de%20Castelo%20Branco!5e0!3m2!1sen!2spt!4v1673228245054!5m2!1sen!2spt"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-    <div class="form-floating">
-      <input
-        type="password"
-        class="form-control"
-        id="floatingPassword"
-        placeholder="Password"
-      />
-      <label for="floatingPassword">Password</label>
-    </div>
-    <a href="../index.html"><p>Submit</p></a>
-
     <script src="./index.js"></script>
 
     <script

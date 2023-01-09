@@ -18,7 +18,8 @@
     <nav class="navbar black-theme">
         <form class="container-fluid justify-content-start">
             <a href="./pages/login.html"><button class="btn btn-outline-success me-2" type="button">Login</button></a>
-            <a href="./pages/register.html"><button class="btn btn-sm btn-outline-secondary" type="button">Register</button></a>
+            <a href="./pages/register.html"><button class="btn btn-sm btn-outline-secondary me-2" type="button">Register</button></a>
+            <a href="./pages/localization.html"><button class="btn btn-sm btn-outline-secondary" type="button">Localization</button></a>
         </form>
     </nav>
     <div id="container">
@@ -65,9 +66,27 @@
                     >JavaScript</a
                   >
                 </li>
+                <li class="color5">
+                  <a
+                    target="_blank"
+                    href="https://pt.wikipedia.org/wiki/Java"
+                    >Java</a
+                  >
+                </li>
               </ul>
             </div>
-            <div id="pop-up-chat-me" class="vanish"></div>
+            <div id="pop-up-chat-me" class="vanish">
+              <div id="chat">
+                <div id="message-container"></div>
+                <div id="form-container">
+                  <form>
+                    <input id="email-input" type="email" placeholder="YourEmail@gmail.com"></input>
+                    <textarea id="message-input" placeholder="Text me ;)"></textarea>
+                    <button id="send-message-button">Send message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
           <a href="#" class="pop-up-close-button">
             <i class="fa-solid fa-xmark"></i>

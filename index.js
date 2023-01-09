@@ -7,6 +7,10 @@ const popUpCloseButton = document.querySelector(".pop-up-close-button");
 const chatMeButton = document.getElementById("chat-me-button");
 const aboutMeButton = document.getElementById("about-me-button");
 const knowMoreButton = document.getElementById("know-more-button");
+const messageContainer = document.getElementById("message-container");
+const emailInput = document.getElementById("email-input");
+const messageInput = document.getElementById("message-input");
+const sendMessageButton = document.getElementById("send-message-button");
 
 // ==== Functions ====
 const showPopUp = () => {
@@ -47,8 +51,27 @@ const showKnowMe = () => {
   popUpKnowMoreContainer.classList.remove("vanish");
 };
 
+const formAlert = () =>
+  setTimeout(() => alert("Fields need to be filled in :)"), 200);
+
+const sendMessage = () => {
+  const emailInputValue = emailInput.value;
+  const messageInputValue = messageInput.value;
+  messageContainer.innerHTML = `
+    <div class="message">
+      <h3>${emailInputValue}</h3>
+      <p>${messageInputValue}</p>
+    </div>
+  `;
+  if (!emailInputValue || !messageInputValue) {
+    messageContainer.innerHTML = "";
+    formAlert();
+  }
+};
+
 // ==== Events ====
 popUpCloseButton.addEventListener("click", hiddenPopUp);
 aboutMeButton.addEventListener("click", showAboutMe);
 chatMeButton.addEventListener("click", showChatMe);
 knowMoreButton.addEventListener("click", showKnowMe);
+sendMessageButton.addEventListener("click", sendMessage);
